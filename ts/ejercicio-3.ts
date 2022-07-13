@@ -1,8 +1,10 @@
-// ## Ejercicio 2
+/*
+## Ejercicio 3
 
-// Utilizando la interfaz `Student` del ejercicio anterior, crea la definición de `User`
-// de tal manera que pueda ser o `Student` o `Teacher`.
-// Aplica la definición de `User` donde sea requerido solventar los errores de tipos.
+Con el resultado del ejercicio 2, sustituye la función `logUser` por la siguiente
+y modifica el código aplicando las guardas que creas conveniente para corregir
+los errores de compilación:
+*/
 
 interface Teacher {
     name: string;

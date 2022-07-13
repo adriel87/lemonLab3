@@ -1,5 +1,3 @@
-//  has uso de los tipos avanzados  key of
-
 // ## Ejercicio 4
 
 // Utilizando las misma interfaz de `Student`, de los ejercicios anteriores
