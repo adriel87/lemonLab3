@@ -1,3 +1,14 @@
+/*
+## Ejercicio 5
+
+Implementa una función para eliminar valores _falsys_ de una estructura de datos.
+Si el argumento es un objeto, deberá eliminar sus propiedades _falsys_.
+Si el argumento es un array, deberá eliminar los elementos _falsys_.
+Si el argumento es un objeto o un array no deberán ser mutados. Siempre deberá de crear una estructura nueva.
+Si no es ni un objeto ni un array deberá de devolver dicho argumento.
+
+*/
+
 const compact = (arg) => {
 
 
@@ -28,6 +39,9 @@ const compact = (arg) => {
                 }
                     
 };
+
+// sin ternario
+
     // if else
     //     return new Object(Object.keys(arg).reduce((prev,current)=> {
     //         if (arg[current]) {

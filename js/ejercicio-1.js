@@ -1,3 +1,12 @@
+/**
+## Ejercicio 1
+
+Un texto en formato CSV tiene el nombre de los campos en la primera fila y los datos en el resto, separados por comas.
+Crea un parseador que reciba un string en formato CSV y devuelva una colección de objetos.
+Utiliza destructuring, rest y spread operator donde creas conveniente.
+ */
+
+
 const data = `id,name,surname,gender,email,picture
 15519533,Raul,Flores,male,raul.flores@example.com,https://randomuser.me/api/portraits/men/42.jpg
 82739790,Alvaro,Alvarez,male,alvaro.alvarez@example.com,https://randomuser.me/api/portraits/men/48.jpg
@@ -19,16 +28,14 @@ const fromCSV = (csv, nAttrs= Number.MAX_SAFE_INTEGER) => {
 
     const PersonInformation = csv.split('\n').filter((element,index)=> index>0).map(value=> value.split(','))
 
-    return PersonInformation.map(person=> person.reduce((prev, current, index)=>{
+    return PersonInformation.map( person => person.reduce((prev, current, index)=>{
 
         if (index <= LIMIT_ATRIBUTES) {
-            
             return {
                 ...prev,
                 [columns[index]]:current
             }
         }
-        
         return {
             ...prev
         }

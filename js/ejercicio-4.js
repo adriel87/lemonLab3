@@ -1,3 +1,10 @@
+/*
+## Ejercicio 4
+
+Crear funcion para normalizar una colección de objetos a un objeto, de tal manera que devuelva un objeto que
+tenga como claves las ids de los objetos y como valores los objetos en sí pero sin la id.
+*/
+
 const collection = [
     {
       id: "f0b6930c-331a-43e1-80db-e6c46ed552aa",

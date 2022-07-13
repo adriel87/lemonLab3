@@ -1,3 +1,10 @@
+/*
+## Ejercicio 3
+
+Crea una función que reciba una colección de objetos y un año. Dicha función deberá de mostrar los nombres de
+las tres personas con el ranking más alto del año.
+*/
+
 const data = [
     { ranking: 6.3, year: 1998, name: "Monroe", gender: "Genderfluid", id: 1450, surname: "Jerde" },
     { ranking: 5.4, year: 1999, name: "Maxie", gender: "Bigender", id: 1652, surname: "Keebler" },
@@ -38,6 +45,10 @@ const data = [
 
   };
 
-
-
-  console.log(winnerByYear(data,2001))
+console.log(winnerByYear(data, 1998))
+console.log(winnerByYear(data, 1999))
+console.log(winnerByYear(data, 2000))
+console.log(winnerByYear(data, 2001))
+console.log(winnerByYear(data, 2002))
+console.log(winnerByYear(data, 2003))
+console.log(winnerByYear(data, 2004))
